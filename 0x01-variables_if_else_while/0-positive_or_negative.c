@@ -3,14 +3,10 @@
 #include <time.h>
 
 /**
- *
- * main - determine if number is positive or negative
- *
- * Description: program will assign a random number to the variable n each time
- *
- *
- * Return: Always 0 (Success)
- *
+ * main - main block
+ * Description: Get a random number and print the number
+ * and if it is positive, negative, or zero
+ * Return: 0
  */
 
 int main(void)
