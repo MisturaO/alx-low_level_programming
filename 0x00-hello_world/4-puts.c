@@ -3,6 +3,7 @@
 /**
  * main: The code entry point
  * Return: 0
+ * puts: prints string to standard output
  */
 
 int main(void)
