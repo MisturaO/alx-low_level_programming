@@ -2,8 +2,8 @@
 
 /**
  * main - Code entry point
- *printf: prints string to standard output with a newline
- * return: returns 0
+ * printf: prints string to standard output with a newline
+ * Return: 0
  */
 
 int main(void)
