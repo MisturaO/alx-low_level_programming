@@ -1,4 +1,5 @@
-/* Proram: a program that prints the lowercase
+/*
+ *Proram: a program that prints the lowercase
  *alphabetin reverse, followed by a new line
  *Auth: Mistura Ojulari
  */
@@ -19,5 +20,5 @@ int main(void)
 
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
