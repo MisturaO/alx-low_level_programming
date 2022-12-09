@@ -1,6 +1,5 @@
 /*
- * Program: A program that prints the alphabet in lowercase, followed by a new line.
- *
+ * Program: A program that prints the alphabe.
  * Auth: Ojulari Mistura
  */
 
@@ -14,14 +13,13 @@
   * Return: Always 0
   */
 
-int main()
+int main(void)
 {
 	char a;
 
-	for(a='a';a<='z';a++)
+	for( a = 'a'; a<= 'z'; a++)
 		putchar(a);
 
 	putchar('\n');
-
 	return (0);
-}						
+}
