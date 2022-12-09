@@ -1,4 +1,4 @@
-/*       
+/*
  *Program: prints the alphabet in lowercase.
  *Auth: Mistura Ojulari
  */
@@ -20,7 +20,6 @@ int main(void)
 		if (letter != 'q' && letter != 'e')
 			putchar(letter);
 	}
-	
 	putchar('\n');
 
 	return (0);
