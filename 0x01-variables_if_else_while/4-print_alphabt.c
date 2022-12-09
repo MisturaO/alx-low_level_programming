@@ -1,10 +1,15 @@
-/*
- *Program: prints the alphabet in lowercase, 
- *followed by a new line.
+/*       
+ *Program: prints the alphabet in lowercase.
  *Auth: Mistura Ojulari
  */
 
+
 #include <stdio.h>
+
+/**
+  * main- Source code entry point.
+  *Return: Alaway 0
+  */
 
 int main(void)
 {
