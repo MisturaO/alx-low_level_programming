@@ -6,9 +6,7 @@
  * @n: number to be computed.
  *
  * Return: returns the computes int.
- *
- *Return: Always 0.
- */ 
+ */
 
 int _abs(int n)
 {
