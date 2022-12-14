@@ -7,6 +7,10 @@
 
 /**
  * add- adds two integers and returns the result.
+ * @a: first number
+ * @b: second number
+ *
+ *Return: returns the result of the function add.
  */
 
 int add(int a, int b)
