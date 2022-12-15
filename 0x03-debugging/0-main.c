@@ -3,6 +3,9 @@
 /**
 * main - tests function that prints if intege
 * is positive or negative
+* positive_or_negative: function to test.
+* @i: number to test.
+*
 * Return: 0
 */
 
