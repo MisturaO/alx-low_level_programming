@@ -2,6 +2,7 @@
 
 /**
  * print_line- a function that draws a straight line in the terminal.
+ *@n: The numbers of lines to print
  *_putchar: prints to stdout
  */
 
