@@ -4,7 +4,6 @@
  * swap_int- function that swaps the values of two integers.
  * @a: number to swap
  * @b: number to swap
- * @c: used in the swapping process
  *
  */
 
