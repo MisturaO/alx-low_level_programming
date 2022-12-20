@@ -6,6 +6,7 @@
  * @s: string lenght to return
  *
  * Return: returns the lenght of string.
+ *
  */
 
 int _strlen(char *s)
