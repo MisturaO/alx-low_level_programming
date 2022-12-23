@@ -3,8 +3,8 @@
 
 /**
  * _strncat -  function that concatenates two strings.
- * @src: cadena a copiar
- * @dest: destino de la cadena.
+ * @src: .
+ * @dest: 
  * @n: number.
  * Return: dest.
  */
