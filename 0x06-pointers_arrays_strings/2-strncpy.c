@@ -2,10 +2,10 @@
 
 /**
  * _strncpy -  function that copies a string..
- * @src: cadena a copiar
- * @dest: destino de la cadena.
+ * @src: appends to dest.
+ * @dest: .
  * @n: number.
- * Return: void
+ * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
