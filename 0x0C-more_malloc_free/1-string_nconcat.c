@@ -2,6 +2,22 @@
 #include <string.h>
 
 /**
+ * _strlen - counts and return string lenght
+ * @string: string param
+ * Rreturn: returns string lenght
+ */
+
+int _strlen(char *string)
+{
+	int i;
+
+	for (i = 0; string[i] != '\0'; i++)
+		;
+		
+	return (i);
+}
+
+/**
  * string_nconcat - concatenates two strings.
  * @s1: firts string param
  * @s2: second string param
@@ -15,7 +31,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int i, c, str_num, len;
+	int i, c, len, str_num;
 
 	str_num = n;
 
@@ -23,9 +39,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return ("");
 	if (s2 == NULL)
 		return ("");
-	if (str_num >= strlen(s2))
-		str_num = strlen(s2);
-	len = strlen(s1) + str_num + 1;
+	if (str_num < 0)
+		return (NULL);
+	if (str_num >= _strlen(s2))
+		str_num = _strlen(s2);
+	len = _strlen(s1) + str_num + 1;
 
 	p = malloc(len * sizeof(char));
 
