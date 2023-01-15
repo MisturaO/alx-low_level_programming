@@ -4,7 +4,7 @@
 /**
  * _strlen - counts and return string lenght
  * @string: string param
- * Rreturn: returns string lenght
+ * Return: returns string lenght
  */
 
 int _strlen(char *string)
@@ -13,7 +13,6 @@ int _strlen(char *string)
 
 	for (i = 0; string[i] != '\0'; i++)
 		;
-		
 	return (i);
 }
 
