@@ -3,31 +3,31 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * print_grid - prints a grid of integers
+ * @grid: the address of the two dimensional grid
+ * @width: width of the grid
+ * @height: height of the grid
  *
  * Return: Nothing.
  */
-void simple_print_buffer(char *buffer, unsigned int size)
-{
-    unsigned int i;
 
-    i = 0;
-    while (i < size)
+void print_grid(int **grid, int width, int height)
+{
+    int w;
+    int h;
+
+    h = 0;
+    while (h < height)
     {
-        if (i % 10)
+        w = 0;
+        while (w < width)
         {
-            printf(" ");
+            printf("%d ", grid[h][w]);
+            w++;
         }
-        if (!(i % 10) && i)
-        {
-            printf("\n");
-        }
-        printf("0x%02x", buffer[i]);
-        i++;
-    }
-    printf("\n");
+        printf("\n");
+        h++;
+    }   
 }
 
 /**
@@ -37,15 +37,17 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-    char *buffer;
+    int **grid;
 
-    buffer = create_array(98, 'H');
-    if  (buffer == NULL)
+    grid = alloc_grid(6, 4);
+    if (grid == NULL)
     {
-        printf("failed to allocate memory\n");
         return (1);
     }
-    simple_print_buffer(buffer, 98);
-    free(buffer);
+    print_grid(grid, 6, 4);
+    printf("\n");
+    grid[0][3] = 98;
+    grid[3][4] = 402;
+    print_grid(grid, 6, 4);
     return (0);
 }
