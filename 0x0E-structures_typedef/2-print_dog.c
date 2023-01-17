@@ -21,9 +21,7 @@ void print_dog(struct dog *d)
 		printf("Age: (nil)\n");
 	else
 		printf("%f\n", d->age);
-
-	/*NOTE: this syntax (*d).owner and this syntax d->owner does the same thing, they are both pointing to the address of the owner member. The asteris * is meant to get the value at the address of owner*/
-
+	/*NOTE: this syntax (*d).owner and this syntax d->owner does the same*/
 	if (d->owner == NULL)
 		printf("Owner: (nil)\n");
 	else
