@@ -20,5 +20,6 @@ typedef struct dog dog_t;
 /*Prototype of the function that initializes "struct dog" structure*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif
