@@ -1,35 +1,41 @@
 #include "dog.h"
+#include <string.h>
 #include <stdlib.h>
 
 /**
  * new_dog - creates a new dog.
- * @name: dog name param
- * @age: dog's age param
- * @owner: dog's owner param
+ * @name: dog name member
+ * @age: dog's age member
+ * @owner: dog's owner member
  *
  * Return: returns pointer p.
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i, len = 0, len2 = 0;
-	dog_t *p;
-	unsigned int len_sum;
+	char *new_name;
+	char *new_owner;
+	dog_t *poppy;
 
-	for (i = 0; name[i]; i++)
-		len++;
-	for (i = 0; owner[i]; i++)
-		len2++;
-	len_sum = len + len2;
+	/*This line means 1 char bite times the lenght of the chars in member name*/
+	new_name = malloc(sizeof(*name) * (strlen(name) + 1));
+	new_owner = malloc(sizeof(*owner) * (strlen(owner) + 1));
+	poppy = malloc(sizeof(dog_t));
 
-	p = malloc(sizeof(len_sum));
-
-	if (p == NULL)
+	if (new_name && new_owner && poppy)
+	{
+		strcpy(new_name, name);
+		strcpy(new_owner, owner);
+		poppy->name = new_name;
+		poppy->age = age;
+		poppy->owner = new_owner;
+	}
+	else
+	{
+		free(new_name);
+		free(new_owner);
+		free(poppy);
 		return (NULL);
-
-	p->name = name;
-	p->age = age;
-	p->owner = owner;
-
-	return (p);
+	}
+	return (poppy);
 }
