@@ -5,9 +5,13 @@
  * free_dog - function that frees dogs.
  * @d: struct_dog variable
  */
+
 void free_dog(dog_t *d)
 {
-	free(d->name);
-	free(d->owner);
-	free(d);
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
