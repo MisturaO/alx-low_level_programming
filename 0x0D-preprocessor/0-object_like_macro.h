@@ -9,4 +9,4 @@
 
 #define SIZE 1024
 
-#endif // #define OBJECT_LIKE_MACRO_H
+#endif /* #define OBJECT_LIKE_MACRO_H */
