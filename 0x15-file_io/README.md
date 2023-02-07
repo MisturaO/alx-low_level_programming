@@ -1,23 +1,23 @@
-`#`Syscall
-`#`File I/O
+<h1> Syscall<h1> 
+<h1> File I/O<h1> 
 
-`##`Resources
-`###`Read or watch:
+<h4> Resources<h4> 
+<h4> Read or watch:<h4> 
 [File descriptors](https://en.wikipedia.org/wiki/File_descriptor)
 
 [C Programming in Linux Tutorial #024 - open() read() write() Functions](https://www.youtube.com/watch?v=CHs9WwvEKdg&list=WL&index=9)
 
-`##`man or help:
+<h4> man or help:<h4> 
 open
 close
 read
 write
 dprintf
 
-`##`Learning Objectives:
-At the end of this project, we are expected to be able to explain to anyone, without the help of Google:
+<h4> Learning Objectives:<h4> 
+At the end of this project, we are expected to be able to explain to anyone.
 
-`##`General:
+<h4> General:<h4> 
 Look for the right source of information online
 How to create, open, close, read and write files
 What are file descriptors
